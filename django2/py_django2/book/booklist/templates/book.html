@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>书籍信息</title>
+</head>
+<body>
+
+<ul>
+	{% for book in blist %}
+<!-- 		<li><a href="/{{ book.id }}/">{{ book.title }}</a></li>  加/接在根路径-->
+		<li><a href="{{ book.id }}/">{{ book.title }}</a></li> 
+	{% endfor %}
+</ul>
+
+</body>
+</html>

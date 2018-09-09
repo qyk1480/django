@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            //查询省信息
+            pro=$('#pro')
+            $.get('/area/0/',function(dict) {
+                $.each(dict.data, function (index, item) {
+                    pro.append('<option value="'+item[0]+'">'+item[1]+'</option>')
+                })
+            })
+        });
+    </script>
+
+</head>
+<body>
+    <select name="" id="pro">
+        <option value="">选择省</option>
+    </select>
+    <select name="" id="city">
+        <option value="">选择市</option>
+    </select>
+    <select name="" id="district">
+        <option value="">选择区</option>
+    </select>
+</body>
+</html>

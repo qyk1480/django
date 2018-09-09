@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<a href="{% url 'show' '1480' '15' %}">显示</a>
+
+    <h1>hello</h1>
+    {{ hero.hname }}
+    {{ hero.showname }}
+    <hr>
+    <ul>
+        奇数蓝偶数红
+    {% for hero in list1 %}
+        {% if forloop.counter|divisibleby:'2' %}
+            <li style="color:red">{{ forloop.counter }}:{{ hero.showname }}</li>
+        {% else %}
+            <li style="color:blue">{{ forloop.counter }}:{{ hero.showname }}</li>
+        {% endif %}
+    {% empty %}
+    没找到
+    {% endfor%}
+    </ul>
+</body>
+</html>

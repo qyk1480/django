@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src='/static/tiny_mce/tiny_mce.js'></script>
+    <script>
+        tinyMCE.init({
+            'mode':'textareas',
+            'theme':'advanced',
+            'width':800,
+            'height':400,
+        });
+    </script>
+</head>
+<body>
+<form method="post" action="/htmlEditorHandle/">
+    
+    <input type="text" name="hname">
+    <br>
+    <textarea name="hcontent" >测试</textarea>
+    <br>
+    <input type="submit" value="提交">
+</form> 
+</body>
+</html>

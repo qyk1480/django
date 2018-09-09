@@ -1,0 +1,9 @@
+insert into bookinfo(btitle,pub_date,bread,bcommet,isDelete) values
+('ÉäµñÓ¢ĞÛ´«','1988-5-1',12,34,0),
+('ÌìÁú°Ë²¿','1986-7-24',36,40,0),
+('Ğ¦°Á½­ºş','1995-12-24',20,80,0)
+('Ñ©É½·Éºü','1987-11-11',58,24,0);
+
+insert into booktest_heroinfo(hname,hgender,book_id,hcontent,isDelete) values
+('¹ù¾¸',1,1,'½µÁúÊ®°ËÕÆ',0),
+('»ÆÈØ',0,1,'´ò¹·°ô·¨',0);

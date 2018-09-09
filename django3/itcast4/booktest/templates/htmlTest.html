@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    {{ t1 }}
+    {{ t1|safe }}
+
+    {% autoescape off %}
+    {{ t1 }}
+    {% endautoescape %}
+    <hr>
+    字面值 <br>
+    {{ t2|default:'<h1>asd</h1>' }}
+    手动转义
+    {{ t2|default:'&lt;h1&gt;asd&lt;/h1&gt;' }}
+
+</body>
+</html>
